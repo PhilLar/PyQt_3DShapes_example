@@ -6,8 +6,8 @@ class QTextEditLogger(logging.Handler):
         super().__init__()
         self.widget = QtWidgets.QPlainTextEdit(parent)
         self.widget.setReadOnly(True)
-        self.widget.setFixedHeight(300)
-        self.widget.setFixedWidth(600)
+        self.widget.setFixedHeight(250)
+        #self.widget.setFixedWidth(600)
 
     def emit(self, record):
         msg = self.format(record)

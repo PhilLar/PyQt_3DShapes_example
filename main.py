@@ -10,7 +10,6 @@ if __name__ == "__main__":
     window = Window()
 
     window.setWindowTitle('exper')
-    window.resize(1200, 800)
 
-    window.show()
+    window.showMaximized()
     sys.exit(app.exec_())

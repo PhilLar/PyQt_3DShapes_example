@@ -1,12 +1,13 @@
 #include "Cyl.h"
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 namespace shapes {
 
 	Cyl::Cyl() {
         this->height = 5;
-	    this->rad = 5; 
+	    this->rad = 5;
     }
 
 	Cyl::Cyl(double height, double rad) {
@@ -19,7 +20,9 @@ namespace shapes {
 		this->rad = obj.rad;
 	}
 
-	Cyl::~Cyl() {}
+	Cyl::~Cyl() {
+		cout << "object was destructed" << endl;
+	}
 
 
 	double Cyl::volume() {

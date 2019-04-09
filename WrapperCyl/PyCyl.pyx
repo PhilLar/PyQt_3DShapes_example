@@ -32,7 +32,6 @@ cdef class PyCyl:
 
     # destructor
     def __dealloc__(self):
-        print('obj')
         del self.c_cyl
 
 
